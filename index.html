@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CampurCemil - Snack Mix Prasmanan Terenak!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Lobster+Two:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="Logo CampurCemil">
+    </div>
+    CampurCemil
+  </header>
+
+  <nav>
+    <a href="#beranda"><i class="fas fa-home"></i> Beranda</a>
+    <a href="#menu"><i class="fas fa-cookie-bite"></i> Menu</a>
+    <a href="#order"><i class="fas fa-shopping-cart"></i> Saran Dan Kritik</a>
+    <!-- <a href="#testimoni"><i class="fas fa-star"></i> Testimoni</a>
+    <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a> -->
+  </nav>
+
+  <section class="hero" id="beranda">
+    <h1>Snack Mix Prasmanan Terenak!</h1>
+    <p>Nikmati sensasi ngemil campur-campur tanpa batas, dari yang manis legit, gurih renyah, sampai pedas nampol. Cocok untuk setiap acara dan suasana!</p>
+    <img src="logo.png" alt="Aneka Snack CampurCemil" />
+    <button class="cta-button" onclick="document.getElementById('order').scrollIntoView({behavior: 'smooth'})">Pesan Sekarang <i class="fas fa-arrow-right"></i></button>
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Menu Favorit Kami</h2>
+    <div class="menu-grid">
+      <div class="menu-item">
+        
+        <h3>Snack Mix</h3>
+        <p>Snack kripik kentang yang dicampur dengan sosis, potongan wortel, dan potongan daun bawang dengan dipadukan berbagai saos</p>
+        <b><h4 class="harga">Rp12.000</h4></b>
+      </div>
+      <div class="menu-item">
+        <h3>Prep Meal</h3>
+        <p>Coming Soon...</p>
+        <b><h4 class="harga">Coming Soon...</h4></b>
+      </div>
+    </div>
+
+    <div class="menu-grid">
+      <div class="menu-item">
+        <h3>Puding</h3>
+        <p>Coming Soon</p>
+        <b><h4 class="harga">Coming Soon</h4></b>
+      </div>
+
+      <!-- <div class="center-menu">
+        <div class="menu-item">
+        <h3>Campur Semua</h3>
+        <p>Tidak bisa pilih? Dapatkan semua varian rasa dalam satu paket besar!</p>
+        <b><h4 class="harga">Rp2.000</h4></b>
+      </div>
+      </div> -->
+      
+    </div>
+
+    <br><br><br>
+
+    
+  </section>
+
+   <!-- <section class="menu-section" id="menu">
+  <h2>Minuman Favorit Kami</h2>
+  
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Es Teh</h3>
+      <p>Perpaduan air teh yang nyegerin dengan es batu yang dingin.</p>
+      <h4 class="harga">Rp2.000</h4>
+    </div>
+
+    <div class="menu-item">
+      <h3>Susu Hangat</h3>
+      <p>Susu murni yang dihangatkan, cocok untuk dinikmati saat santai.</p>
+      <h4 class="harga">Rp3.000</h4>
+    </div>
+  </div>
+
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Susu Kocok Bambang</h3>
+      <p>Susu segar yang dikocok lembut dengan rasa manis menyegarkan.</p>
+      <h4 class="harga">Rp4.000</h4>
+    </div>
+
+    <div class="menu-item">
+      <h3>Es Jeruk</h3>
+      <p>Minuman jeruk segar dengan es batu, pas untuk hari yang panas.</p>
+      <h4 class="harga">Rp3.000</h4>
+    </div>
+  </div>
+</section> -->
+
+ 
+
+  <section class="order-section" id="order">
+    <h2>Kritik Dan Saran!</h2>
+    <form id="orderForm">
+      <input type="text" id="customerName" placeholder="Nama Lengkap Anda" required />
+      <!-- <input type="tel" id="customerPhone" placeholder="Nomor Telepon (WhatsApp)" required /> -->
+      <select id="packageSelect" required>
+        <option value="">Pilih Paket Snack Favorit Anda</option>
+        <option value="Snack Mix - Rp12.000">Snack Mix - Rp12.000</option>
+        <!-- <option value="Snack Gurih - Rp55.000">Snack Gurih - Rp55.000</option>
+        <option value="Snack Pedas - Rp60.000">Snack Pedas - Rp60.000</option>
+        <option value="Campur Semua - Rp75.000">Campur Semua - Rp75.000</option> -->
+      </select>
+       <input type="text" id="customerSaran" placeholder="Saran Anda" required />
+        <input type="text" id="customerKritik" placeholder="Kritik Anda" required />
+      <!-- <select id="DrinkSelect">
+        <option value="">Pilih Minuman Favorit Anda</option>
+        <option value="Snack Manis - Rp50.000">Snack Manis - Rp50.000</option>
+        <option value="Snack Gurih - Rp55.000">Snack Gurih - Rp55.000</option>
+        <option value="Snack Pedas - Rp60.000">Snack Pedas - Rp60.000</option>
+        <option value="Campur Semua - Rp75.000">Campur Semua - Rp75.000</option>
+      </select>
+      <input type="text" id="customerAddress" placeholder="Alamat Pengiriman Lengkap" required />
+      <textarea id="customerNotes" placeholder="Catatan Tambahan (misal: tingkat kepedasan, alergi, request khusus)"></textarea> -->
+      <button type="submit">Kirim! <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </section>
+
+  <!-- <section class="testimonial-section" id="testimoni">
+    <h2>Kata Mereka Tentang CampurCemil</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <i class="fas fa-quote-left"></i>
+        <p>"Snack-nya enak banget, bikin nagih! Setiap ada acara pasti CampurCemil jadi pilihan utama. Rasanya pas di lidah dan selalu fresh."</p>
+        <strong>- Sinta Dewi, Sampit</strong>
+      </div>
+      <div class="testimonial">
+        <i class="fas fa-quote-left"></i>
+        <p>"Pengiriman cepat, packaging rapi, dan yang paling penting, rasa snack-nya beda dari yang lain! Anak-anak dan suami suka semua."</p>
+        <strong>- Reza Hardian, Palangka Raya</strong>
+      </div>
+      <div class="testimonial">
+        <i class="fas fa-quote-left"></i>
+        <p>"Baru kali ini nemu snack prasmanan sekomplit ini. Variannya banyak, pedasnya nampol, manisnya pas. Pasti repeat order terus!"</p>
+        <strong>- Budi Santoso, Banjarmasin</strong>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- <section class="contact-section" id="kontak">
+    <h2>Hubungi Kami</h2>
+    <p><i class="fas fa-envelope"></i> Email: <a href="#"></a></p>
+    <p><i class="fab fa-instagram"></i> Instagram: <a href="#" target="_blank"></a></p>
+    <p><i class="fab fa-whatsapp"></i> WhatsApp: <a href="#" target="_blank"></a> (klik untuk chat)</p>
+    <p><i class="fas fa-map-marker-alt"></i></p>
+  </section> -->
+
+  <footer>
+    <p>&copy; 2025 CampurCemil. Hak Cipta Dilindungi Undang-Undang.</p>
+    <p>Dibuat dengan <i class="fas fa-heart" style="color: #e74c3c;"></i> untuk pengalaman ngemil terbaik.</p>
+  </footer>
+
+  <script src="script.js">
+  </script>
+</body>
+</html>
